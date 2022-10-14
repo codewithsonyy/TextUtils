@@ -3,9 +3,8 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <div className="accordion w-2/3 mx-auto " id="accordionExample">
-        <h1 className="text-2xl font-bold my-3 mx-2">About Us</h1>
-        <div className="accordion-item bg-white border border-gray-200">
+      <div className="accordion sm:w-4/5  mx-auto" id="accordionExample ">
+        <div className="accordion-item bg-slate-100 border border-gray-200 dark:bg-black dark:text-white">
           <h2 className="accordion-header mb-0" id="headingOne">
             <button
               className="
@@ -16,128 +15,32 @@ export default function About() {
         w-full
         py-4
         px-5
-        text-base text-gray-800 text-left
-        bg-white
+        text-base text-white text-left
+        bg-slate-400
         border-0
         rounded-none
         transition
+        dark:bg-gray-200
+        dark:text-black
+        
         focus:outline-none"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
             >
-              Accordion Item #1
+              About Us
             </button>
           </h2>
-          <div
-            id="collapseOne"
-            className="accordion-collapse collapse show"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body py-4 px-5">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classNamees that we use to style each element. These classNamees
-              control the overall appearance, as well as the showing and hiding
-              via CSS transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item bg-white border border-gray-200">
-          <h2 className="accordion-header mb-0" id="headingTwo">
-            <button
-              className="
-        accordion-button
-        collapsed
-        relative
-        flex
-        items-center
-        w-full
-        py-4
-        px-5
-        text-base text-gray-800 text-left
-        bg-white
-        border-0
-        
-        transition
-        focus:outline-none
-      "
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Accordion Item #2
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            className="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body py-4 px-5">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classNamees that we use to style each element. These classNamees
-              control the overall appearance, as well as the showing and hiding
-              via CSS transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item bg-white border border-gray-200">
-          <h2 className="accordion-header mb-0" id="headingThree">
-            <button
-              className="
-        accordion-button
-        collapsed
-        relative
-        flex
-        items-center
-        w-full
-        py-4
-        px-5
-        text-base text-gray-800 text-left
-        bg-white
-        border-0
-        rounded-none
-        transition
-        focus:outline-none
-      "
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Accordion Item #3
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            className="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body py-4 px-5">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classNamees that we use to style each element. These classNamees
-              control the overall appearance, as well as the showing and hiding
-              via CSS transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+          <div>
+            <div className="accordion-body py-6 md:py-4  px-8 md:px-5 leading-7 ">
+              <strong>
+                TextUtils is a word counter and a character utility which can be
+                used to manipulate your text the way you want.
+              </strong>{" "}
+              .You can remove extra spaces or convert your text to uppercast or
+              lowercase as well as you can copy the manipulated text. You can
+              also download the pdf of the input text. consectetur adipisicing
+              elit. Iure molestias illo praesentium sint, officiis fuga
+              voluptatem rerum. Corrupti ducimus rem similique voluptate
+              reiciendis nulla vitae provident deleniti minus, recusandae enim!
             </div>
           </div>
         </div>
