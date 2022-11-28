@@ -6,19 +6,19 @@ export default function TextForm(props) {
   const [btntext, setBtnText] = useState("Black Theme");
   const [myStyle, setMyStyle] = useState({
     color: "white",
-    backgroundColor: "#1d4ed8",
+    backgroundColor: "#d97706",
   });
   const toggleStyle = () => {
     if (myStyle.color === "white") {
       setMyStyle({
-        color: "blue",
+        color: "amber",
         backgroundColor: "black",
       });
       setBtnText("Blue btns");
     } else {
       setMyStyle({
         color: "white",
-        backgroundColor: "#1e40af",
+        backgroundColor: "#d97706",
       });
       setBtnText("Black btns ");
     }
@@ -77,7 +77,7 @@ export default function TextForm(props) {
         <textarea
           id="myBox"
           rows="8"
-          className="  block my-4  p-2.5 w-full text-sm text-gray-900 bg-gray-50 border-2  focus:outline-none  focus:border-blue-500  dark:bg-black dark:text-white dark:focus:border-blue-500 dark:border-gray-400 "
+          className="  block my-4  p-2.5 w-full text-sm text-gray-900 bg-gray-50 border-2  focus:outline-none  focus:border-amber-500  dark:bg-black dark:text-white dark:focus:border-amber-500 dark:border-gray-400 "
           placeholder="Your text..."
           value={text}
           onChange={handleOnChange}
@@ -87,21 +87,21 @@ export default function TextForm(props) {
         <button
           style={myStyle}
           onClick={handleUpClick}
-          className="justify-center sm:mr-4 md:mr-0 items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-2 focus:ring-blue-200 hover:bg-blue-800"
+          className="justify-center sm:mr-4 md:mr-0 items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-amber-700 rounded-lg focus:ring-2 focus:ring-amber-200 hover:bg-amber-800"
         >
           To Uppercase
         </button>
         <button
           style={myStyle}
           onClick={handleLoClick}
-          className=" justify-center sm:mr-4 md:mr-0  items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-2 focus:ring-blue-200 hover:bg-blue-800"
+          className=" justify-center sm:mr-4 md:mr-0  items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-amber-700 rounded-lg focus:ring-2 focus:ring-amber-200 hover:bg-amber-800"
         >
           To Lowercase
         </button>
         <button
           style={myStyle}
           onClick={handleClearClick}
-          className="justify-center sm:mr-4 md:mr-0  items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-2 focus:ring-blue-200 hover:bg-blue-800"
+          className="justify-center sm:mr-4 md:mr-0  items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-amber-700 rounded-lg focus:ring-2 focus:ring-amber-200 hover:bg-amber-800"
         >
           Clear all
         </button>

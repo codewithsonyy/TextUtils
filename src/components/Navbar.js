@@ -6,7 +6,7 @@ export default function Test(props) {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="w-full  shadow  bg-blue-800 dark:bg-black dark:text-blue-600 text-white">
+      <nav className="w-full  shadow  bg-amber-600 dark:bg-black dark:text-amber-600 text-white">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 ">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -16,7 +16,7 @@ export default function Test(props) {
                 </h2>
                 <button
                   onClick={props.theme}
-                  className="ml-4 flex items-center  py-2.5 px-4 text-xs font-medium text-center text-blue-800 bg-white rounded-lg focus:ring-2 focus:ring-blue-200 hover:bg-black hover:text-white dark:bg-blue-800 dark:text-white"
+                  className="ml-4 flex items-center  py-2.5 px-4 text-xs font-medium text-center text-amber-800 bg-white rounded-lg focus:ring-2 focus:ring-amber-200 hover:bg-black hover:text-white dark:bg-amber-800 dark:text-white"
                 >
                   Switch Theme
                 </button>

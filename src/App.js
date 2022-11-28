@@ -24,15 +24,16 @@ function App() {
   return (
     <>
       <Router>
-        <div className="bg-white dark:bg-cyan-900 h-screen">
+        <div className="bg-white dark:bg-amber-900  pb-20">
           <Navbar theme={() => setTheme(nextTheme)} />
 
           <Alert alert={alert} />
+        
           <div>
             <Routes>
               <Route path="/about" element={<About />} />
 
-              <Route
+               <Route
                 path="/"
                 element={
                   <TextForm
@@ -40,7 +41,7 @@ function App() {
                     showAlert={showAlert}
                   />
                 }
-              />
+              /> 
             </Routes>
           </div>
         </div>
