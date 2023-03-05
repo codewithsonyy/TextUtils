@@ -19,6 +19,28 @@ static site without router and different theme is live on Gh-page
 - Alert on doing a task
 
 
+## function to download as pdf
+
+
+
+```javascript
+ const handlePdfClick = () => {
+    const input = document.querySelector("#myBox");
+    html2canvas(input, { scale: 2, quality: 4 }).then((canvas) => {
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF({
+        orientation: "landscape",
+      });
+      const imgProps = pdf.getImageProperties(imgData);
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+      pdf.save("download.pdf");
+    });
+  };
+```
+    
+    
 ## light theme
 
 ![App Screenshot](https://i.ibb.co/QnJhxMc/Screenshot-91.png )
